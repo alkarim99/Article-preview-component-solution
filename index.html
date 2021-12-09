@@ -127,6 +127,43 @@
     }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    @media screen and (max-width: 375px) {
+      body{
+        box-sizing: border-box;
+      }
+      .container{
+        flex-direction: column;
+      }
+      .container .hero-img{
+        order: 1;
+        width: 100%;
+        height: 200px;
+        border-radius: 10px 10px 0 0;
+        background-position: 0 -40px;
+      }
+      .container .main{
+        order: 2;
+        padding: 40px 30px 15px 30px;
+        width: 300px;
+        position: relative;
+      }
+      .container .main .title{
+        font-size: 18px;
+      }
+      .container .main .desc{
+        line-height: 20px;
+      }
+      .container .main .user{
+        margin-top: 30px;
+      }
+      .container .main .social{
+        right: 0;
+        bottom: 0;
+        width: 320px;
+        padding: 20px 20px;
+        border-radius: 0 0 10px 10px;
+      }
+    }
   </style>
 </head>
 <body>
