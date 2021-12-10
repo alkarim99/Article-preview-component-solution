@@ -29,7 +29,6 @@
     .container{
       background-color: #fff;
       border-radius: 10px;
-      height: 250px;
       display: flex;
     }
     .container .hero-img{
@@ -190,6 +189,7 @@
         <img src="images/icon-facebook.svg" alt="share">
         <img src="images/icon-twitter.svg" alt="share">
         <img src="images/icon-pinterest.svg" alt="share">
+        <img src="images/icon-share-1.svg" alt="share" class="social-share">
       </div>
     </div>
   </div>
@@ -200,10 +200,15 @@
   <script>
     const share = document.querySelector('.share');
     const social = document.querySelector('.social');
+    const ss = document.querySelector('.social-share');
     share.addEventListener('mouseover', mouseOver);
+    ss.addEventListener('mouseover', mouseOver2);
     share.addEventListener('mouseout', mouseOut);
     function mouseOver() {
       social.style.display = "flex";
+    }
+    function mouseOver2() {
+      ss.style.display = "flex";
     }
     function mouseOut() {
       social.style.display = "none";
