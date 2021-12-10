@@ -124,6 +124,9 @@
       border-radius: 10px;
       display: none;
     }
+    .container .main .social .social-share{
+      display: none;
+    }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
     @media screen and (max-width: 375px) {
@@ -200,15 +203,10 @@
   <script>
     const share = document.querySelector('.share');
     const social = document.querySelector('.social');
-    const ss = document.querySelector('.social-share');
     share.addEventListener('mouseover', mouseOver);
-    ss.addEventListener('mouseover', mouseOver2);
     share.addEventListener('mouseout', mouseOut);
     function mouseOver() {
       social.style.display = "flex";
-    }
-    function mouseOver2() {
-      ss.style.display = "flex";
     }
     function mouseOut() {
       social.style.display = "none";
